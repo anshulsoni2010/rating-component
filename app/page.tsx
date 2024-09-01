@@ -22,7 +22,7 @@ export default function Home() {
         vx={0.1}
         vy={0.1}
       />
-      <div className="flex min-h-screen h-screen items-center justify-center relative">
+      <div className="flex min-h-screen h-screen items-center justify-center relative p-4 sm:p-0">
         {/* main thing 👇 */}
         <FeedbackRating />
       </div>
@@ -45,7 +45,7 @@ export default function Home() {
             <span>by Anshul Soni</span>
           </motion.div>
           <motion.div
-            className="flex space-x-4"
+            className="flex flex-wrap justify-center space-x-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.5 }}
