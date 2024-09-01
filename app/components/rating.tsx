@@ -239,7 +239,7 @@ const FeedbackRating = () => {
                   transition={{ type: "spring", stiffness: 500, damping: 30 }}
                 >
                   <item.icon
-                    size={window.innerWidth < 640 ? (feedbackActive ? 28 : 32) : (feedbackActive ? 40 : 48)} // Adjust size for mobile view and active state
+                    size={typeof window !== 'undefined' && window.innerWidth < 640 ? (feedbackActive ? 28 : 32) : (feedbackActive ? 40 : 48)} // Adjust size for mobile view and active state
                     className={cn(
                       "transition-all duration-300",
                       rating === index + 1 ? "opacity-100" : "opacity-50 hover:opacity-75"
